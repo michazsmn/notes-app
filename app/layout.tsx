@@ -9,7 +9,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="bg-gray-50 flex flex-col items-center justify-center m-12">
+      <body className="bg-gray-50 items-center justify-center m-12">
         {children}
       </body>
     </html>
