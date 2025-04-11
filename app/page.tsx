@@ -8,7 +8,7 @@ export default async function Home() {
   return (
     <div>
       <h1 className="text-4xl text-center font-bold mb-8 font-[family-name:var(--font-geist-sans)] w-full bg-blue-500 text-white py-3 rounded-lg">Notes</h1>
-      <div className="bg-gray-50 grid grid-cols-3 gap-12">
+      <div className="grid grid-cols-3 gap-12">
         <div className="bg-gray-200 space-y-10 p-5 rounded-lg">
           <NewNote/>
           <RemoveAllButton/>

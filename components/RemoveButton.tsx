@@ -7,7 +7,7 @@ export default function RemoveButton({ id } : { id : number}) {
         "use server";
         await prisma.notes.delete({
             where : {
-                id : id
+                id : id,
             }
         })
 
