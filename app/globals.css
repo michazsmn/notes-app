@@ -1,5 +1,34 @@
 @import "tailwindcss";
 
+:root {
+  --body-background: #f3f4f6;
+  --interactables: #2b7fff;
+  --interactables-on-hover: #155dfc;
+  --container-background: #e5e7eb;
+  --text-color-primary: #ffffff;
+  --text-color-secondary: #99a1af;
+}
+
+/* Themes*/
+[data-theme="light"] {
+  --body-background: #f3f4f6;
+  --interactables: #2b7fff;
+  --interactables-on-hover: #155dfc;
+  --container-background: #e5e7eb;
+  --text-color-primary: #ffffff;
+  --text-color-secondary: #99a1af;
+}
+
+[data-theme="dark"] {
+  --body-background: #141414;
+  --interactables: #2b7fff;
+  --interactables-on-hover: #155dfc;
+  --container-background: #383838;
+  --text-color-primary: #ffffff;
+  --text-color-secondary: #99a1af;
+}
+
+/* Theme Switch */
 .switch {
     position: relative;
     display: inline-block;

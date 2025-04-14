@@ -11,7 +11,7 @@ export default function RemoveAllButton() {
     }
 
     return (
-        <button onClick={rm} className='w-full bg-blue-500 text-white py-3 rounded-lg hover:bg-blue-600 '>Remove All</button>
+        <button onClick={rm} className='w-full bg-(--interactables) text-(--text-color-primary) py-3 rounded-lg hover:bg-(--interactables-on-hover)'>Remove All</button>
     )
 
 }
