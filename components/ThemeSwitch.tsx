@@ -2,8 +2,8 @@
 import React from 'react'
 
 export default function ThemeSwitch() {
-    
-    function switchTheme(e : any){
+    //@ts-ignore
+    function switchTheme(e){
         if (e.target.checked) {
             //@ts-ignore
             document.querySelector("body").setAttribute("data-theme", "dark")
