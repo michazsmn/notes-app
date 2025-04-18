@@ -31,16 +31,16 @@ export default function NewNote() {
           <textarea
             id="content"
             name="content"
-            placeholder="Write your note content here..."
+            placeholder="Write your note content here... ✍️"
             rows={4}
-            className="w-full px-4 py-2 border rounded-lg"
+            className="w-full px-4 py-2 border rounded-lg text-xl"
           />
         </div>
         <button
           type="submit"
           className="w-full bg-(--interactables) text-(--text-color-primary) py-3 rounded-lg hover:bg-(--interactables-on-hover)"
         >
-          Create Note
+          Create Note ➕
         </button>
       </Form>
     </div>

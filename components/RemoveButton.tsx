@@ -15,6 +15,6 @@ export default function RemoveButton({ id } : { id : number}) {
     }
 
     return (
-        <button onClick={rm} className='w-25 h-10 bg-(--interactables) text-(--text-color-primary) py-3 rounded-lg hover:bg-(--interactables-on-hover)'>Remove</button>
+        <button onClick={rm} className='w-25 h-10 bg-(--interactables) text-(--text-color-primary) py-3 rounded-lg hover:bg-(--interactables-on-hover)'>Remove ❌</button>
     )
 }

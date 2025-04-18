@@ -22,7 +22,7 @@ export default function CheckboxFinished({id, status} : {id : number, status : b
 
   return (
     <div>
-      <input className="w-10 h-10" type="checkbox" checked={status} onChange={flipState} />
+      <input className="w-10 h-10 accent-(--interactables)" type="checkbox" checked={status} onChange={flipState} />
     </div>
   )
 }

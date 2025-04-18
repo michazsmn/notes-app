@@ -1,30 +1,31 @@
 @import "tailwindcss";
+@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 :root {
-  --body-background: #f3f4f6;
+  --body-background: #eeeeee;
   --interactables: #2b7fff;
   --interactables-on-hover: #155dfc;
-  --container-background: #e5e7eb;
+  --container-background: #d8d8d8;
   --text-color-primary: #ffffff;
   --text-color-secondary: #99a1af;
-  --text-color-third: #ebebeb;
+  --text-color-third: #181818;
 }
 
 /* Themes*/
 [data-theme="light"] {
-  --body-background: #f3f4f6;
+  --body-background: #eeeeee;
   --interactables: #2b7fff;
   --interactables-on-hover: #155dfc;
-  --container-background: #e5e7eb;
+  --container-background: #d8d8d8;
   --text-color-primary: #ffffff;
   --text-color-secondary: #99a1af;
   --text-color-third: #181818;
 }
 
 [data-theme="dark"] {
-  --body-background: #141414;
-  --interactables: #2b7fff;
-  --interactables-on-hover: #155dfc;
+  --body-background: #202020;
+  --interactables: #163d79;
+  --interactables-on-hover: #1e4291;
   --container-background: #383838;
   --text-color-primary: #ffffff;
   --text-color-secondary: #99a1af;
@@ -72,11 +73,11 @@
   }
   
   input:checked + .slider {
-    background-color: #2196F3;
+    background-color: var(--interactables);
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px #2196F3;
+    box-shadow: 0 0 1px var(--interactables);
   }
   
   input:checked + .slider:before {
@@ -94,6 +95,8 @@
     border-radius: 50%;
   }
 
-  textarea::placeholder {
-    color: var(--text-color-third);  
-  }
+
+/* Other */
+textarea::placeholder {
+  color: var(--text-color-third);  
+}

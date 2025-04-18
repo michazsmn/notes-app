@@ -2,6 +2,11 @@
 
 ## Notes app synchronized with postgresql database
 
+### Install dependencies
+```bash
+npm install
+```
+
 ### Setup postgres
 ```bash
 docker compose up
