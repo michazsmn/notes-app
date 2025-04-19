@@ -19,11 +19,12 @@ export default function ThemeSwitch() {
         }
     }
 
+    console.log((Cookie.get("theme") == "true"))
+    
     return (
     <div>
         <label className="switch col-span-1">
-            
-            <input type="checkbox" onChange={switchTheme}/>
+            <input type="checkbox" onChange={switchTheme} defaultChecked={(Cookie.get("theme") == "true")}/>
             <span className="slider round"></span>
         </label>
     </div>

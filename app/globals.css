@@ -1,5 +1,4 @@
 @import "tailwindcss";
-@import url("https://fonts.googleapis.com/css?family=Montserrat");
 
 :root {
   --body-background: #eeeeee;
@@ -99,4 +98,14 @@
 /* Other */
 textarea::placeholder {
   color: var(--text-color-third);  
+}
+
+::-webkit-scrollbar {
+  background: var(--body-background);
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--interactables);
+  border-radius: 10px
 }
