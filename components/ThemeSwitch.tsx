@@ -1,32 +1,42 @@
 "use client"
-import React from 'react'
-import Cookie from "js-cookie"
+import React, { useEffect, useState } from 'react'
 
 export default function ThemeSwitch() {
 
+    const [theme, setTheme] = useState("light")
+
+    useEffect(() => {
+        const theme = localStorage.getItem('theme');
+        if (theme){
+            setTheme(theme)
+            //@ts-ignore
+            document.querySelector('#toggle').checked = (localStorage.getItem('theme') === 'dark')
+        }
+      }, []);
+
+    useEffect(() => {
+        document.querySelector("body")?.setAttribute("data-theme", theme);
+        localStorage.setItem("theme", theme)
+    }, [theme])
+
     //@ts-ignore
-    function switchTheme(e){
-        if (e.target.checked) {
-            //@ts-ignore 
-            document.querySelector("body").setAttribute("data-theme", "dark")
-            //@ts-ignore
-            Cookie.set("theme", true)
+    function switchTheme(e) {
+        const target = e.target as HTMLInputElement;
+    
+        if (target.checked) {
+            setTheme("dark")
         } else {
-            //@ts-ignore
-            document.querySelector("body").setAttribute("data-theme", "light")
-            //@ts-ignore
-            Cookie.set("theme", false)
+            setTheme("light")
         }
     }
-
-    console.log((Cookie.get("theme") == "true"))
     
     return (
     <div>
         <label className="switch col-span-1">
-            <input type="checkbox" onChange={switchTheme} defaultChecked={(Cookie.get("theme") == "true")}/>
+            <input id="toggle" type="checkbox" onChange={switchTheme}/>
             <span className="slider round"></span>
         </label>
     </div>
   )
 }
+

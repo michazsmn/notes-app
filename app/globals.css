@@ -102,10 +102,16 @@ textarea::placeholder {
 
 ::-webkit-scrollbar {
   background: var(--body-background);
-  width: 8px;
+  width: 25px;
 }
 
 ::-webkit-scrollbar-thumb {
   background: var(--interactables);
-  border-radius: 10px
+  border-radius: 10px;
+  border: 5px solid var(--body-background)
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--interactables-on-hover);
 }

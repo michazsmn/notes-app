@@ -10,7 +10,7 @@ export default async function Home() {
         <h1 className="text-6xl text-center font-bold mb-8 w-full bg-(--interactables) text-(--text-color-primary) py-3 rounded-lg">Notes 📝</h1>
       </div>
       <div className="grid grid-cols-4 gap-10">
-        <div className="bg-(--container-background) space-y-10 p-5 rounded-lg  h-min">
+        <div className="bg-(--container-background) space-y-10 p-5 rounded-lg h-auto">
           <NewNote/>
           <RemoveAllButton/>
           <div className="flex flex-row justify-center space-x-4 text-2xl">
