@@ -15,7 +15,6 @@ export default function CheckboxFinished({id, status} : {id : number, status : b
       },
     })
 
-
     revalidatePath("/")
 
   }

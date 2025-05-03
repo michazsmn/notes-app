@@ -99,6 +99,10 @@
 textarea::placeholder {
   color: var(--text-color-third);  
 }
+textarea {
+  color: var(--text-color-third);  
+}
+
 
 ::-webkit-scrollbar {
   background: var(--body-background);

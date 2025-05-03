@@ -2,7 +2,6 @@ import Form from "next/form";
 import React from 'react'
 import prisma from "@/lib/prisma";
 import { revalidatePath } from "next/cache";
-import { redirect } from "next/navigation";
 
 export default function NewNote() {
   async function createPost(formData: FormData) {
@@ -39,7 +38,7 @@ export default function NewNote() {
         <button
           type="submit" className="w-full bg-(--interactables) text-(--text-color-primary) 
           text-xl py-3 rounded-lg hover:bg-(--interactables-on-hover)">
-          Create Note ➕
+          Create Note ➕ 
         </button>
       </Form>
     </div>
